@@ -10,11 +10,19 @@
   padding: 1em;
 }
 
+.container nav>a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 .container .links {
   display: flex;
   justify-content: space-evenly;
 }
 
-.container .links div {
+.container .links a {
   margin: auto 2em;
+  text-decoration: none;
+  font-weight: bold;
 }
