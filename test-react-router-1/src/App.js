@@ -5,6 +5,7 @@ import Nav from './components/Nav.jsx';
 import Home from './components/Home.jsx';
 import Apropos from './components/Apropos.jsx';
 import Blog from './components/Blog.jsx';
+import Article from './components/Article.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/apropos" element={<Apropos />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" exact element={<Blog />} />
+          <Route path="/blog/:id" element={<Article />} />
         </Routes>
       </Router>
     </div>

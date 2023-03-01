@@ -1,6 +1,7 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../lib';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 const Blog = () => {
         useEffect(() => {
@@ -16,7 +17,7 @@ const Blog = () => {
     return ( 
         <div>
             <h1>Blog</h1>
-            {posts.take().map(post => <h4><Link key={post.id}>{post.title}</Link></h4>)}
+            {posts.take().map(post => <h4 className='blog-link'><Link to={`./blog/${post.id}`} key={post.id}>{post.title}</Link></h4>)}
         </div>
     );
 }

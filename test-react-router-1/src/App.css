@@ -26,3 +26,8 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+.blog-link a {
+  text-decoration: none;
+  font-style: italic;
+}
